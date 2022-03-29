@@ -2,26 +2,33 @@
 #include <string>
 using namespace std;
 
-class Artist
+class User
 {
   public:
-    int user_id;
+    int id;
     string username;
+    string email;
+    string database[100];
 
-  void add_user(int id, string name)
+  void add_user(int user_id, string name, string mail)
   {
-    user_id = id;
+    id = user_id;
     username = name;
+    email = mail;
+
+    
   }
   void show_user()
   {
-    cout << user_id << endl;
-    cout << username;
+    cout << "User ID : " << id << endl;
+    cout << "Name : " << username << endl;
+    cout << "E-mail : "<< email << endl;
+    cout << "Data : "<< database << endl;
   }
 };
 int main() {
-    Artist Anik;
-    Anik.add_user(105, "raihan");
+    User Anik;
+    Anik.add_user(105, "Raihan", "anikraihan17@gmail.com");
     Anik.show_user();
     return 0;
 }
