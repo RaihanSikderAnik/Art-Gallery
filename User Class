@@ -1,28 +1,27 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-class User
+class Artist
 {
-  public int user_id;
-  public string username;
-  public string user_email;
-  public date user_dob;
-  public string user_address;
-  
-  void add_user()
+  public:
+    int user_id;
+    string username;
+
+  void add_user(int id, string name)
   {
-    cin << user_id << endl;
-    cin << username << endl;
-    cin << user_email << endl;
-    cin << user_dob << endl;
-    cin << user_address << endl;
+    user_id = id;
+    username = name;
   }
-  void delete_user()
+  void show_user()
   {
-    user_id = 0
-    username = null;
-    user_email = null;
-    user_dob = 0;
-    user_address = null;
+    cout << user_id << endl;
+    cout << username;
   }
+};
+int main() {
+    Artist Anik;
+    Anik.add_user(105, "raihan");
+    Anik.show_user();
+    return 0;
 }
