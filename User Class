@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class User
+{
+  public int user_id;
+  public string username;
+  public string user_email;
+  public date user_dob;
+  public string user_address;
+  
+  void add_user()
+  {
+    cin << user_id << endl;
+    cin << username << endl;
+    cin << user_email << endl;
+    cin << user_dob << endl;
+    cin << user_address << endl;
+  }
+  void delete_user()
+  {
+    user_id = 0
+    username = null;
+    user_email = null;
+    user_dob = 0;
+    user_address = null;
+  }
+}
